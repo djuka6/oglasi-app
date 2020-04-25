@@ -125,10 +125,10 @@ class postaviOglas extends Component {
                   disabled={loading}
                 >
                   Postavi
+                  {loading && (
+                    <CircularProgress size={30} style={styles.progress} />
+                  )}
                 </Button>
-                {loading && (
-                  <CircularProgress size={30} style={styles.progress} />
-                )}
               </Form>
             </Col>
             <Col></Col>
