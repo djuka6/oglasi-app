@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/oglasi-app/static/css/main.c80ad70b.chunk.css",
+    "main.js": "/oglasi-app/static/js/main.4b946ad4.chunk.js",
+    "main.js.map": "/oglasi-app/static/js/main.4b946ad4.chunk.js.map",
+    "runtime-main.js": "/oglasi-app/static/js/runtime-main.7b2a8617.js",
+    "runtime-main.js.map": "/oglasi-app/static/js/runtime-main.7b2a8617.js.map",
+    "static/css/2.69121389.chunk.css": "/oglasi-app/static/css/2.69121389.chunk.css",
+    "static/js/2.381d357d.chunk.js": "/oglasi-app/static/js/2.381d357d.chunk.js",
+    "static/js/2.381d357d.chunk.js.map": "/oglasi-app/static/js/2.381d357d.chunk.js.map",
+    "index.html": "/oglasi-app/index.html",
+    "precache-manifest.df94f79831227aa704fbade234df1b89.js": "/oglasi-app/precache-manifest.df94f79831227aa704fbade234df1b89.js",
+    "service-worker.js": "/oglasi-app/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/oglasi-app/static/css/2.69121389.chunk.css.map",
+    "static/css/main.c80ad70b.chunk.css.map": "/oglasi-app/static/css/main.c80ad70b.chunk.css.map",
+    "static/js/2.381d357d.chunk.js.LICENSE.txt": "/oglasi-app/static/js/2.381d357d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b2a8617.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.381d357d.chunk.js",
+    "static/css/main.c80ad70b.chunk.css",
+    "static/js/main.4b946ad4.chunk.js"
+  ]
+}
