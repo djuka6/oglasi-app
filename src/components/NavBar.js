@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavItem } from "react-bootstrap";
 import { Button } from "@material-ui/core";
 import VpnKeyOutlinedIcon from "@material-ui/icons/VpnKeyOutlined";
 import { Link } from "react-router-dom";
@@ -29,18 +29,18 @@ class NavBar extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link>
+              <NavItem>
                 <Button component={Link} to="/signup">
                   <HowToRegOutlinedIcon /> REGISTRUJ SE
                 </Button>
-              </Nav.Link>
+              </NavItem>
             </Nav>
             <Nav>
-              <Nav.Link eventKey={2}>
+              <NavItem>
                 <Button component={Link} to="/login">
                   <VpnKeyOutlinedIcon style={styles.ikonica} /> PRIJAVI SE
                 </Button>
-              </Nav.Link>
+              </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

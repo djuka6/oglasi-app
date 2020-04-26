@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavItem } from "react-bootstrap";
 import { Button } from "@material-ui/core";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
@@ -31,24 +31,24 @@ class NavBar extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link>
+              <NavItem>
                 <Button component={Link} to="/oglasiKorisnika">
                   <ShoppingCartOutlinedIcon /> Oglasi
                 </Button>
-              </Nav.Link>
-              <Nav.Link>
+              </NavItem>
+              <NavItem>
                 <Button component={Link} to="/postaviOglas">
                   <AddCircleOutlineOutlinedIcon /> Postavi oglas
                 </Button>
-              </Nav.Link>
-              <Nav.Link>
+              </NavItem>
+              <NavItem>
                 <Button component={Link} to="/">
                   <AccountCircleOutlinedIcon /> {this.props.user.user.handle}
                 </Button>
-              </Nav.Link>
+              </NavItem>
             </Nav>
             <Nav>
-              <Nav.Link eventKey={2}>
+              <NavItem>
                 <Button
                   style={styles}
                   onClick={() => {
@@ -57,7 +57,7 @@ class NavBar extends Component {
                 >
                   <ExitToAppOutlinedIcon /> IZLOGUJ SE
                 </Button>
-              </Nav.Link>
+              </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
