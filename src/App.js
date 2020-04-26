@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import home from "./components/home";
 import login from "./pages/login";
@@ -39,7 +39,7 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <MuiThemeProvider theme={theme}>
-          <Router>
+          <HashRouter>
             <NavigationBar />
             <div className="App">
               <Switch>
@@ -56,7 +56,7 @@ class App extends React.Component {
                 />
               </Switch>
             </div>
-          </Router>
+          </HashRouter>
         </MuiThemeProvider>
       </Provider>
     );
