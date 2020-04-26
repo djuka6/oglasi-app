@@ -5,7 +5,7 @@ import relativeTime from "dayjs/plugin/relativeTime";
 import UnfoldMoreIcon from "@material-ui/icons/UnfoldMore";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
-import { StylesProvider } from "@material-ui/core";
+
 const style = {
   layout: {
     marginTop: "30px",
@@ -45,6 +45,7 @@ class Cardi extends Component {
     const {
       oglas: { naslov, body, datum, imgUrl, korisnik, cena },
     } = this.props;
+    var naslov_skraceni = naslov.substring(0, 16) + "...";
     dayjs.extend(relativeTime);
     return (
       <div>
@@ -52,7 +53,7 @@ class Cardi extends Component {
           <Card size="lg" style={style.layout}>
             <Card.Img style={style.Img} variant="top" src={imgUrl} />
             <Card.Body>
-              <Card.Title>{naslov}</Card.Title>
+              <Card.Title>{naslov_skraceni}</Card.Title>
 
               <Button variant="outlined-primary" onClick={handleShow}>
                 {" "}
@@ -70,8 +71,11 @@ class Cardi extends Component {
               <Modal.Title>
                 <PermIdentityIcon style={style.span} fontSize="large" />{" "}
                 <span>{korisnik}</span>
+                <hr />
+                {naslov}
               </Modal.Title>
             </Modal.Header>
+
             <Modal.Body>
               {body}
               <br />

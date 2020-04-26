@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { Button } from "@material-ui/core";
 import VpnKeyOutlinedIcon from "@material-ui/icons/VpnKeyOutlined";
 import { Link } from "react-router-dom";
@@ -20,29 +20,28 @@ class NavBar extends Component {
   render() {
     return (
       <>
-        <Navbar bg="light" expand="lg" sticky="top">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
           <Navbar.Brand>
-            <Button variant="outlined" component={Link} to="/">
+            <Button component={Link} to="/">
               <HomeOutlinedIcon /> OglasiApp
             </Button>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav ">
-            <Button
-              //variant="link"
-              style={styles.signup}
-              component={Link}
-              to="/signup"
-            >
-              <HowToRegOutlinedIcon /> Sign up
-            </Button>
-            <Button //variant="link"
-              style={styles}
-              component={Link}
-              to="/login"
-            >
-              <VpnKeyOutlinedIcon style={styles.ikonica} /> Log in
-            </Button>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link>
+                <Button component={Link} to="/signup">
+                  <HowToRegOutlinedIcon /> REGISTRUJ SE
+                </Button>
+              </Nav.Link>
+            </Nav>
+            <Nav>
+              <Nav.Link eventKey={2}>
+                <Button component={Link} to="/login">
+                  <VpnKeyOutlinedIcon style={styles.ikonica} /> PRIJAVI SE
+                </Button>
+              </Nav.Link>
+            </Nav>
           </Navbar.Collapse>
         </Navbar>
       </>

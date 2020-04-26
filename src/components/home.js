@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, CardDeck } from "react-bootstrap";
+import { Container, Row, Col, Footer } from "react-bootstrap";
 import Card from "./Card";
 import axios from "axios";
 

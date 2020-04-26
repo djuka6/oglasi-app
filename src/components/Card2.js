@@ -164,7 +164,7 @@ class Cardi2 extends Component {
                   required
                   name="body"
                   id="standard-required"
-                  label="Body:"
+                  label="Nesto vise:"
                   defaultValue={body}
                   fullWidth
                   onChange={handleChange}
