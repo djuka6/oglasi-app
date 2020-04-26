@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/oglasi-app/precache-manifest.df94f79831227aa704fbade234df1b89.js"
+  "/oglasi-app/precache-manifest.7957dab36d16f6a080b1be3313862ad2.js"
 );
 
 self.addEventListener('message', (event) => {
